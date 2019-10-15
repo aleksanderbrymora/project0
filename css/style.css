@@ -1,0 +1,127 @@
+/* Colors */
+/* Color Theme Swatches in Hex */
+.Mahjong-2D-Game-Graphic-match3-1-hex {
+	color: #3462bf;
+}
+.Mahjong-2D-Game-Graphic-match3-2-hex {
+	color: #308ad9;
+}
+.Mahjong-2D-Game-Graphic-match3-3-hex {
+	color: #f2b705;
+}
+.Mahjong-2D-Game-Graphic-match3-4-hex {
+	color: #bf5517;
+}
+.Mahjong-2D-Game-Graphic-match3-5-hex {
+	color: #f20505;
+}
+/* General rules */
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	background-color: #3462bf;
+}
+
+/* Logo */
+h1 {
+	font-family: 'Montserrat', sans-serif;
+	margin: 10px;
+	color: #f2b705;
+}
+
+/* Turn */
+.turn {
+	display: block;
+	margin: 5vh auto 0;
+}
+/* Score */
+#score {
+	display: inline-block;
+	padding: 10px;
+	margin: 0 auto;
+	width: 20%;
+	background-color: #308ad9;
+	border: 4px solid #f2b705;
+	border-radius: 5px;
+}
+
+.points p {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	font-family: 'Montserrat', sans-serif;
+	color: #f2b705;
+	font-size: 20px;
+}
+
+/* Gameboard */
+.container {
+	align-items: center;
+	margin: 5vh auto 5vh;
+}
+
+#game-box {
+	background-color: #308ad9;
+	padding: 20px;
+	height: 40vh;
+	width: 40vh;
+	display: flex;
+	flex-direction: column;
+	border: 4px solid #f2b705;
+	border-radius: 5px;
+}
+
+.row {
+	display: flex;
+	justify-content: space-evenly;
+	height: 33%;
+}
+
+.box {
+	width: 33%;
+	margin: 2px;
+	padding: 5px;
+	transition: 0.6s all ease-out;
+}
+
+.box:hover {
+	background-color: #3462bf;
+	border-radius: 100%;
+}
+
+.box img {
+	margin: 5px;
+}
+
+/* Win Box */
+#win {
+	opacity: 0;
+	margin: 5px auto;
+	background-color: #f20505;
+	border-radius: 10px;
+}
+
+/* Dividing lanes */
+#box1 {
+	border-bottom: 2px solid #f2b705;
+	border-right: 2px solid #f2b705;
+}
+#box3 {
+	border-bottom: 2px solid #f2b705;
+	border-left: 2px solid #f2b705;
+}
+#box7 {
+	border-top: 2px solid #f2b705;
+	border-right: 2px solid #f2b705;
+}
+#box9 {
+	border-top: 2px solid #f2b705;
+	border-left: 2px solid #f2b705;
+}
