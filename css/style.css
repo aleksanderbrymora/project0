@@ -41,6 +41,7 @@ h1 {
 }
 
 #title {
+	margin-top: 3vh;
 	color: #fb3d6a;
 	background-color: white;
 	border-radius: 15px;
@@ -58,8 +59,9 @@ h1 {
 
 /* Turn */
 .turn {
-	display: block;
-	margin: 5vh auto 0;
+	position: absolute;
+	left: 70%;
+	top: 30%;
 	background-color: white;
 	border-radius: 15px;
 	padding: 20px;

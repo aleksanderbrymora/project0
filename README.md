@@ -11,3 +11,20 @@ _GOALS ACOMPLISHED_
 - I deployed the game [online](aleksanderbrymora.github.io/project0)
 - I added some css and jQuery animations
 - I started to work on the AI, but have not yet finished. I added logic to respond to the first move and I'm researching minmax method to create the rest of the ai
+
+_TECHNOLOGIES USED_
+
+- HTML5
+- CSS3
+- JavaScript
+- JavaScript Libraries:
+  - jQuery
+  - jsTilt
+  - mojs
+
+_INSTRUCTIONS_
+
+- Click on a field wherever you want
+- Let the oponent click
+- Once you reach the end ie: a draw, a loss or a win points will be added to a winner, and the next round will start after some time
+- Repeat
