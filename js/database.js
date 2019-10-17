@@ -45,8 +45,12 @@ const addSymbol = function (id) {
             if (winTest()) {
                 xScore++;
                 updatePoints();
-                winIndicate(isCross);
+                winIndicate('cross');
                 reset();
+            }
+            if (drawTest()) {
+                reset();
+                winIndicate('draw');
             }
             isCross = false;
             // Display the turn
@@ -58,8 +62,12 @@ const addSymbol = function (id) {
             if (winTest()) {
                 oScore++;
                 updatePoints();
-                winIndicate(isCross);
+                winIndicate('circle');
                 reset();
+            }
+            if (drawTest()) {
+                reset();
+                winIndicate('draw');
             }
             isCross = true;
             // Display the turn
@@ -111,6 +119,15 @@ const winTest = function () {
     return result;
 }
 
-
-
-
+// Draw test 
+const drawTest = function () {
+    //basically test if there are any empty spots
+    let counter = 0;
+    info.forEach(row => {
+        if (row.includes('')) {
+            counter++;
+        }
+    });
+    if (counter > 0) return false;
+    else return true;
+}

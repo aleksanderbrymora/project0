@@ -25,14 +25,17 @@ const turnChange = function (symbol) {
     $('.turn img').attr('src', symbol);
 }
 
-const winIndicate = function (isCross) {
-    if (isCross) {
+const winIndicate = function (symbol) {
+    if (symbol === 'cross') {
         $('#win h1').text('X won!');
     }
-    else {
+    else if (symbol === 'circle') {
         $('#win h1').text('O won!');
     }
-    $('#win').fadeTo('2s', 1).delay('10s').fadeOut('2s', 0);
+    else {
+        $('#win h1').text('Its a draw!');
+    }
+    $('#win').fadeTo('5s', 1).fadeOut('10s', 0);
 }
 
 const reset = function () {
