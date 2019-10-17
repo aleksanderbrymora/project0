@@ -41,7 +41,7 @@ const addSymbol = function (id) {
         if (isCross) {
             addCross(id);
             assigning(id, 'x');
-            turnChange('./img/circle.svg');
+            turnChange('./img/circle-turn.svg');
             if (winTest()) {
                 xScore++;
                 updatePoints();
